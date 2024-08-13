@@ -1,8 +1,11 @@
 //variable for scss 
-//variable for font color
-$primary: rgb(0, 101, 168);
 
+//variable for background color
 $body-bg: rgb(244, 246, 249);
+
+//variable for font color
+$primary-font: rgb(0, 101, 168);
+
 $primary-nav: rgb(35, 182, 25);
 //
 
@@ -12,25 +15,39 @@ $primary-nav: rgb(35, 182, 25);
 //nav
 .navbar-collapse {
     justify-content: flex-end;
+    font-size: 18px;
 }
 
-.font-color {
-    color: rgb(0, 101, 168);
+li.nav-item {
+    margin: 0px 32px 0px 32px;
+}
+
+.logo-nav {
+    color: $primary-font;
 }
 
 .nav-link {
-    color: rgb(0, 101, 168);
+    display: inline;
+    color: $primary-font;
 }
 
 .navbar-nav .nav-link.active {
-    color: rgb(0, 101, 168);
+    color: $primary-font;
+}
+
+.email-icon-nav i {
+    margin: 0px 4px 0px 4px;
+    color: $primary-font;
+}
+
+.phone-icon-nav i {
+    margin: 0px 4px 0px 4px;
+    color: $primary-font;
 }
 
 
 
-// body {
-//     background-color: black;
-// }
+//section
 
 .section {
     width: 100%;
@@ -44,6 +61,7 @@ $primary-nav: rgb(35, 182, 25);
 
 
 
+
 // #home {
 
 //     color: $primary-nav-color;
@@ -54,9 +72,7 @@ $primary-nav: rgb(35, 182, 25);
 // }
 
 // .section:nth-child(odd) {
-//     background-color: #e7147a;
-
-
+//     background-color: $primary-font;
 // }
 
 // .section:nth-child(even) {
