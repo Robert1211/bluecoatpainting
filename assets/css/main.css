@@ -11965,13 +11965,21 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.navbar-main {
+  margin: 0px 50px 0px 50px;
+}
+
+ul.navbar-nav {
+  margin-right: -16px;
+}
+
 .navbar-collapse {
   justify-content: flex-end;
   font-size: 18px;
 }
 
 li.nav-item {
-  margin: 0px 32px 0px 32px;
+  margin: 0px 8px 0px 8px;
 }
 
 .logo-nav {
@@ -11990,11 +11998,13 @@ li.nav-item {
 .email-icon-nav i {
   margin: 0px 4px 0px 4px;
   color: rgb(0, 101, 168);
+  font-size: 20px;
 }
 
 .phone-icon-nav i {
   margin: 0px 4px 0px 4px;
   color: rgb(0, 101, 168);
+  font-size: 20px;
 }
 
 .section {

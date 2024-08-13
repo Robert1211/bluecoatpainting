@@ -12,14 +12,27 @@ $primary-nav: rgb(35, 182, 25);
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
+
 //nav
+
+
+
+
+.navbar-main {
+    margin: 0px 50px 0px 50px;
+}
+
+ul.navbar-nav {
+    margin-right: -16px;
+}
+
 .navbar-collapse {
     justify-content: flex-end;
     font-size: 18px;
 }
 
 li.nav-item {
-    margin: 0px 32px 0px 32px;
+    margin: 0px 8px 0px 8px;
 }
 
 .logo-nav {
@@ -38,13 +51,19 @@ li.nav-item {
 .email-icon-nav i {
     margin: 0px 4px 0px 4px;
     color: $primary-font;
+    font-size: 20px;
 }
 
 .phone-icon-nav i {
     margin: 0px 4px 0px 4px;
     color: $primary-font;
+    font-size: 20px;
 }
 
+// i.fa.fa-phone-square {
+//     font-size: 50px;
+//     color: red;
+// }
 
 
 //section
