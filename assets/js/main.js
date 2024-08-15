@@ -22,7 +22,9 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 100) {
-            $(".navbar").css("background", "lightgrey");
+            $(".navbar").css("background", "rgb(192, 192, 192)");
+            $(".navbar").css("transition", "2.5s");
+
         } else {
             $(".navbar").css("background", "transparent");
         }
