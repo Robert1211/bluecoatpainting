@@ -5,10 +5,18 @@ $body-bg: rgb(244, 246, 249);
 // $body-bg: rgb(16, 17, 17);
 
 //variable for font color
-$primary-font: rgb(0, 101, 168);
+$primary-font-color: rgb(0, 101, 168);
+
+//variable for font style
+$primary-font: "Nunito", sans-serif;
+
+//   font-family: "Nunito", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+
 
 $primary-nav: rgb(35, 182, 25);
-//
 
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
@@ -16,6 +24,10 @@ $primary-nav: rgb(35, 182, 25);
 
 //nav
 
+nav {
+    font-family: $primary-font;
+
+}
 
 .navbar-main {
 
@@ -30,6 +42,9 @@ ul.navbar-nav {
 .navbar-collapse {
     justify-content: flex-end;
     font-size: 18px;
+    font-weight: 500;
+
+
 }
 
 li.nav-item {
@@ -37,27 +52,29 @@ li.nav-item {
 }
 
 .logo-nav {
-    color: $primary-font;
+    color: $primary-font-color;
+
+
 }
 
 .nav-link {
     display: inline;
-    color: $primary-font;
+    color: $primary-font-color;
 }
 
 .navbar-nav .nav-link.active {
-    color: $primary-font;
+    color: $primary-font-color;
 }
 
 .email-icon-nav i {
     margin: 0px 4px 0px 4px;
-    color: $primary-font;
+    color: $primary-font-color;
     font-size: 20px;
 }
 
 .phone-icon-nav i {
     margin: 0px 4px 0px 4px;
-    color: $primary-font;
+    color: $primary-font-color;
     font-size: 20px;
 }
 

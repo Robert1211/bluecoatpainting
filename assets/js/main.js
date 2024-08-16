@@ -9,6 +9,22 @@ document.addEventListener('click', function (event) {
     }
 });
 
+
+//function for when scrolling background nav change color
+$(document).ready(function () {
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+            $(".navbar").css("background", "rgba(192, 192, 192, .2)");
+            $(".navbar").css("transition", "2.5s");
+
+        } else {
+            $(".navbar").css("background", "transparent");
+        }
+    });
+});
+
+// different way for function color background 
 // window.onscroll = function () {
 //     var navbar = document.getElementById("navbar");
 //     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -17,16 +33,3 @@ document.addEventListener('click', function (event) {
 //         navbar.classList.remove("scrolled");
 //     }
 // };
-
-$(document).ready(function () {
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll > 100) {
-            $(".navbar").css("background", "rgb(192, 192, 192)");
-            $(".navbar").css("transition", "2.5s");
-
-        } else {
-            $(".navbar").css("background", "transparent");
-        }
-    });
-});
