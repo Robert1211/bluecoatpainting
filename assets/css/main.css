@@ -11965,10 +11965,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-nav {
-  font-family: "Nunito", sans-serif;
-}
-
 .navbar-main {
   padding: 0px 50px 0px 50px;
 }
@@ -11978,9 +11974,11 @@ ul.navbar-nav {
 }
 
 .navbar-collapse {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
   justify-content: flex-end;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 li.nav-item {
@@ -11988,6 +11986,7 @@ li.nav-item {
 }
 
 .logo-nav {
+  font-family: "Nunito", sans-serif;
   color: rgb(0, 101, 168);
 }
 
@@ -11997,6 +11996,7 @@ li.nav-item {
 }
 
 .navbar-nav .nav-link.active {
+  font-family: "Nunito", sans-serif;
   color: rgb(0, 101, 168);
 }
 
@@ -12018,5 +12018,8 @@ li.nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(51, 152, 51);
+}
+
+#home {
+  background-color: rgb(244, 246, 249);
 }/*# sourceMappingURL=main.css.map */

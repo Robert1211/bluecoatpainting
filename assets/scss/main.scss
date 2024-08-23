@@ -6,7 +6,6 @@ $body-bg: rgb(244, 246, 249);
 
 //variable for font color
 $primary-font-color: rgb(0, 101, 168);
-
 //variable for font style
 $primary-font: "Nunito", sans-serif;
 
@@ -22,17 +21,13 @@ $primary-nav: rgb(35, 182, 25);
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 
+
 //nav
 
-nav {
-    font-family: $primary-font;
-
-}
+nav {}
 
 .navbar-main {
-
     padding: 0px 50px 0px 50px;
-
 }
 
 ul.navbar-nav {
@@ -40,9 +35,11 @@ ul.navbar-nav {
 }
 
 .navbar-collapse {
+    font-family: $primary-font;
+    font-optical-sizing: auto;
     justify-content: flex-end;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
 
 
 }
@@ -52,8 +49,8 @@ li.nav-item {
 }
 
 .logo-nav {
+    font-family: $primary-font;
     color: $primary-font-color;
-
 
 }
 
@@ -63,6 +60,7 @@ li.nav-item {
 }
 
 .navbar-nav .nav-link.active {
+    font-family: $primary-font;
     color: $primary-font-color;
 }
 
@@ -80,9 +78,6 @@ li.nav-item {
 
 
 
-
-
-
 //section
 
 .section {
@@ -91,10 +86,14 @@ li.nav-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(51, 152, 51);
+    //color: rgb(51, 152, 51);
 
 }
 
+
+#home {
+    background-color: rgb(244, 246, 249);
+}
 
 
 
