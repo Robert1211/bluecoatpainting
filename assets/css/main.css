@@ -11966,7 +11966,8 @@ textarea.form-control-lg {
   }
 }
 .navbar-main {
-  padding: 0px 50px 0px 50px;
+  padding-left: 269px;
+  padding-right: 269px;
 }
 
 ul.navbar-nav {
@@ -12033,7 +12034,7 @@ li.nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.07;
+  opacity: 0.05;
 }
 #home .home__text_intro {
   z-index: 2;
