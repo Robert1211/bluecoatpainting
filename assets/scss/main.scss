@@ -32,6 +32,12 @@ $primary-nav: rgb(35, 182, 25);
     padding-left: 269px;
     padding-right: 269px;
 
+    @media (max-width: 1000px) {
+
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
 }
 
 
@@ -99,11 +105,11 @@ li.nav-item {
 }
 
 
+
+//home section
 #home {
     background-color: rgb(244, 246, 249);
 }
-
-
 
 #home {
     .home__img_background {
@@ -132,9 +138,40 @@ li.nav-item {
         color: red;
     }
 
-    //     color: $primary-nav-color;
+
 }
 
+//service section
+#services {
+    background-color: rgb(244, 246, 249);
+}
+
+#services {
+    .services__img_background {
+        // background-image: url('https://drive.google.com/thumbnail?id=1NzAO0wWCD6ax_amLrs8l5KYsbYttd6vQ&sz=w1000');
+        position: absolute;
+        z-index: 1;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.05;
+    }
+
+    .services__text_intro {
+        // position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: red;
+    }
+
+}
 
 // .section h1 {
 //     font-size: 50px;

@@ -11969,6 +11969,12 @@ textarea.form-control-lg {
   padding-left: 269px;
   padding-right: 269px;
 }
+@media (max-width: 1000px) {
+  .navbar-main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 
 ul.navbar-nav {
   margin-right: -16px;
@@ -12037,6 +12043,31 @@ li.nav-item {
   opacity: 0.05;
 }
 #home .home__text_intro {
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}
+
+#services {
+  background-color: rgb(244, 246, 249);
+}
+
+#services .services__img_background {
+  position: absolute;
+  z-index: 1;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.05;
+}
+#services .services__text_intro {
   z-index: 2;
   width: 100%;
   height: 100vh;

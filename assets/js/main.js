@@ -17,16 +17,17 @@ $(document).ready(function () {
         if (scroll > 100) {
             $(".navbar").css("background", "rgba(192, 192, 192, .2)");
             $(".navbar").css("transition", "1.5s");
-            $(".navbar").css("padding-left", "269px");
-            $(".navbar").css("padding-right", "269px");
+            // $(".navbar").css("padding-left", "269px");
+            // $(".navbar").css("padding-right", "269px");
+
 
 
 
 
         } else {
             $(".navbar").css("background", "transparent");
-            $(".navbar").css("padding-left", "269px");
-            $(".navbar").css("padding-right", "269px");
+            // $(".navbar").css("padding-left", "269px");
+            // $(".navbar").css("padding-right", "269px");
 
 
         }
