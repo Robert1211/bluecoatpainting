@@ -16,6 +16,7 @@ $(document).ready(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 100) {
             $(".navbar").css("background", "rgba(192, 192, 192, .2)");
+            $(".navbar").css("backdrop-filter", "blur(10px)");
             $(".navbar").css("transition", "1.5s");
             // $(".navbar").css("padding-left", "269px");
             // $(".navbar").css("padding-right", "269px");
