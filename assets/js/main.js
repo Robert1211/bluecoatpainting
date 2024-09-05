@@ -35,6 +35,7 @@ $(document).ready(function () {
     });
 });
 
+
 // different way for function color background 
 // window.onscroll = function () {
 //     var navbar = document.getElementById("navbar");
