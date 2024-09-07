@@ -1,4 +1,4 @@
-//variable for scss 
+//variable for scss
 
 //variable for background color
 $body-bg: rgb(244, 246, 249);
@@ -14,197 +14,186 @@ $primary-font: "Nunito", sans-serif;
 //   font-weight: <weight>;
 //   font-style: normal;
 
-
 $primary-nav: rgb(35, 182, 25);
 
-
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-
-
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 //nav
 
 .navbar-main {
+  // background-color: red;
+  padding-left: 269px;
+  padding-right: 269px;
 
-    // background-color: red;
-    padding-left: 269px;
-    padding-right: 269px;
-
-    @media (max-width: 1000px) {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+  @media (max-width: 1000px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
-
-
-
 ul.navbar-nav {
-    margin-right: -16px;
+  margin-right: -16px;
 }
 
 .navbar-collapse {
-    font-family: $primary-font;
-    font-optical-sizing: auto;
-    justify-content: flex-end;
-    font-size: 18px;
-    font-weight: 600;
-
-
+  font-family: $primary-font;
+  font-optical-sizing: auto;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 li.nav-item {
-    margin: 0px 8px 0px 8px;
+  margin: 0px 8px 0px 8px;
 }
 
 .logo-nav {
-    font-family: $primary-font;
-    color: $primary-font-color;
-
+  font-family: $primary-font;
+  color: $primary-font-color;
 }
 
 .nav-link {
-    display: inline;
-    color: $primary-font-color;
+  display: inline;
+  color: $primary-font-color;
 }
 
 .navbar-nav .nav-link.active {
-    font-family: $primary-font;
-    color: $primary-font-color;
+  font-family: $primary-font;
+  color: $primary-font-color;
 }
 
 .email-icon-nav i {
-    margin: 0px 4px 0px 4px;
-    color: $primary-font-color;
-    font-size: 20px;
+  margin: 0px 4px 0px 4px;
+  color: $primary-font-color;
+  font-size: 20px;
 }
 
 .phone-icon-nav i {
-    margin: 0px 4px 0px 4px;
-    color: $primary-font-color;
-    font-size: 20px;
+  margin: 0px 4px 0px 4px;
+  color: $primary-font-color;
+  font-size: 20px;
 }
-
-
-
 
 //section
 
 .section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //color: rgb(51, 152, 51);
+}
+
+//home section
+.section {
+  color: $primary-font-color;
+  font-family: $primary-font;
+}
+
+#home {
+  background-color: rgb(244, 246, 249);
+}
+
+#home {
+  .home__img_logo {
+    position: absolute;
+    top: 110px;
+    // background-color: red;
+  }
+
+  .home__img_background {
+    // background-image: url('https://drive.google.com/thumbnail?id=1NzAO0wWCD6ax_amLrs8l5KYsbYttd6vQ&sz=w1000');
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    //color: rgb(51, 152, 51);
+    opacity: 0.05;
+  }
 
-}
-
-
-
-//home section
-.section {
+  .home__text_intro {
+    // position: absolute;
+    // background-color: blue;
+    z-index: 2;
+    // width: 100%;
+    // height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: $primary-font-color;
-    font-family: $primary-font;
-}
-
-#home {
-    background-color: rgb(244, 246, 249);
-}
-
-#home {
-    .home__img_background {
-        // background-image: url('https://drive.google.com/thumbnail?id=1NzAO0wWCD6ax_amLrs8l5KYsbYttd6vQ&sz=w1000');
-        position: absolute;
-        z-index: 1;
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0.05;
-
-
-    }
-
-    .home__text_intro {
-        // position: absolute;
-        z-index: 2;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: $primary-font-color;
-    }
-
-
+  }
+  p {
+    margin-top: 215px;
+    margin-bottom: -2rem;
+    font-size: 25px;
+    text-align: center;
+    height: 14vh;
+    width: 75%;
+  }
 }
 
 //service section
 #services {
-    background-color: rgb(244, 246, 249);
+  background-color: rgb(244, 246, 249);
 }
 
 #services {
-    .services__img_background {
-        // background-image: url('https://drive.google.com/thumbnail?id=1NzAO0wWCD6ax_amLrs8l5KYsbYttd6vQ&sz=w1000');
-        position: absolute;
-        z-index: 1;
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0.05;
-    }
+  .services__img_background {
+    // background-image: url('https://drive.google.com/thumbnail?id=1NzAO0wWCD6ax_amLrs8l5KYsbYttd6vQ&sz=w1000');
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.05;
+  }
 
-    .services__text_intro {
-        // position: absolute;
-        z-index: 2;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
+  .services__text_intro {
+    // position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 #projects {
-    background-color: rgb(244, 246, 249);
+  background-color: rgb(244, 246, 249);
 }
 
 #projects {
-    .projects__img_background {
-        // background-image: url('https://drive.google.com/thumbnail?id=1NzAO0wWCD6ax_amLrs8l5KYsbYttd6vQ&sz=w1000');
-        position: absolute;
-        z-index: 1;
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0.05;
-    }
+  .projects__img_background {
+    // background-image: url('https://drive.google.com/thumbnail?id=1NzAO0wWCD6ax_amLrs8l5KYsbYttd6vQ&sz=w1000');
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.05;
+  }
 
-    .projects__text_intro {
-        // position: absolute;
-        z-index: 2;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
+  .projects__text_intro {
+    // position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
-
 
 // .section h1 {
 //     font-size: 50px;
