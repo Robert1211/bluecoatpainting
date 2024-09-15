@@ -12048,7 +12048,7 @@ li.nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.05;
+  opacity: 0.09;
 }
 #home .home__text_intro {
   z-index: 2;
@@ -12060,10 +12060,12 @@ li.nav-item {
 #home p {
   margin-top: 215px;
   margin-bottom: -2rem;
-  font-size: 25px;
+  font-size: 22px;
+  font-style: normal;
   text-align: center;
   height: 14vh;
   width: 75%;
+  font-family: "Nunito", sans-serif;
 }
 
 #services {
@@ -12079,7 +12081,7 @@ li.nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.05;
+  opacity: 0.1;
 }
 #services .services__text_intro {
   z-index: 2;

@@ -112,7 +112,7 @@ li.nav-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.05;
+    opacity: 0.09;
   }
 
   .home__text_intro {
@@ -129,10 +129,12 @@ li.nav-item {
   p {
     margin-top: 215px;
     margin-bottom: -2rem;
-    font-size: 25px;
+    font-size: 22px;
+    font-style: normal;
     text-align: center;
     height: 14vh;
     width: 75%;
+    font-family: $primary-font;
   }
 }
 
@@ -152,7 +154,7 @@ li.nav-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.05;
+    opacity: 0.1;
   }
 
   .services__text_intro {
