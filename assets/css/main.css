@@ -11968,6 +11968,13 @@ textarea.form-control-lg {
 .navbar-main {
   padding-left: 269px;
   padding-right: 269px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+@media (max-width: 1230px) {
+  .navbar-main {
+    padding-left: 235px;
+  }
 }
 @media (max-width: 1000px) {
   .navbar-main {
@@ -11989,7 +11996,17 @@ ul.navbar-nav {
 }
 
 li.nav-item {
-  margin: 0px 8px 0px 8px;
+  margin: 0px 15px 0px 15px;
+}
+@media (max-width: 1470px) {
+  li.nav-item {
+    margin: 0px 2px 0px 2px;
+  }
+}
+@media (max-width: 1320px) {
+  li.nav-item {
+    margin: 0px -5px 0px -5px;
+  }
 }
 
 .logo-nav {
@@ -12019,6 +12036,44 @@ li.nav-item {
   font-size: 20px;
 }
 
+.sticky { /* Dla Safari */
+  position: sticky;
+  top: 0px; /* Możesz użyć bottom: 0; jeśli chcesz, aby element był przyklejony do dołu */
+  padding: 10px;
+  text-align: center;
+}
+
+.content {
+  height: 2000px; /* Tylko dla demonstracji */
+}
+
+.scrolling-text {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  color: rgb(0, 101, 168);
+}
+
+.scrolling-text span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 20s linear infinite;
+  position: fixed;
+  bottom: 35px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .section {
   width: 100%;
   height: 100vh;
@@ -12038,7 +12093,7 @@ li.nav-item {
 
 #home .home__img_logo {
   position: absolute;
-  top: 110px;
+  top: 125px;
 }
 #home .home__img_background {
   position: absolute;
@@ -12058,14 +12113,14 @@ li.nav-item {
   color: rgb(0, 101, 168);
 }
 #home p {
-  margin-top: 215px;
+  margin-top: 55px;
   margin-bottom: -2rem;
   font-size: 22px;
-  font-style: normal;
   text-align: center;
   height: 14vh;
   width: 75%;
   font-family: "Nunito", sans-serif;
+  font-weight: 600;
 }
 
 #services {
