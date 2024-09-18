@@ -12036,17 +12036,6 @@ li.nav-item {
   font-size: 20px;
 }
 
-.sticky { /* Dla Safari */
-  position: sticky;
-  top: 0px; /* Możesz użyć bottom: 0; jeśli chcesz, aby element był przyklejony do dołu */
-  padding: 10px;
-  text-align: center;
-}
-
-.content {
-  height: 2000px; /* Tylko dla demonstracji */
-}
-
 .scrolling-text {
   width: 100%;
   overflow: hidden;
@@ -12093,7 +12082,7 @@ li.nav-item {
 
 #home .home__img_logo {
   position: absolute;
-  top: 125px;
+  top: 140px;
 }
 #home .home__img_background {
   position: absolute;
@@ -12113,14 +12102,25 @@ li.nav-item {
   color: rgb(0, 101, 168);
 }
 #home p {
-  margin-top: 55px;
+  margin-top: 0px;
   margin-bottom: -2rem;
   font-size: 22px;
   text-align: center;
   height: 14vh;
-  width: 75%;
+  width: 88%;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
+}
+
+.element-list {
+  color: rgb(0, 101, 168);
+  position: absolute;
+  bottom: 166px;
+  font-family: "Nunito", sans-serif;
+}
+
+.icon {
+  color: #ffbf64; /* Kolor ikony */
 }
 
 #services {

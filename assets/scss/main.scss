@@ -85,26 +85,6 @@ li.nav-item {
   font-size: 20px;
 }
 
-//slide txt
-// .slide-text {
-//   font-family: $primary-font;
-//   color: $primary-font-color;
-//   font-size: 25px;
-//   font-weight: 600;
-// }
-
-.sticky {
-  position: -webkit-sticky; /* Dla Safari */
-  position: sticky;
-  top: 0px; /* Możesz użyć bottom: 0; jeśli chcesz, aby element był przyklejony do dołu */
-
-  padding: 10px;
-  text-align: center;
-}
-.content {
-  height: 2000px; /* Tylko dla demonstracji */
-}
-
 //scrolling txt start
 .scrolling-text {
   width: 100%;
@@ -159,7 +139,7 @@ li.nav-item {
 #home {
   .home__img_logo {
     position: absolute;
-    top: 125px;
+    top: 140px;
     // background-color: red;
   }
 
@@ -188,15 +168,26 @@ li.nav-item {
     color: $primary-font-color;
   }
   p {
-    margin-top: 55px;
+    margin-top: 0px;
     margin-bottom: -2rem;
     font-size: 22px;
     text-align: center;
     height: 14vh;
-    width: 75%;
+    width: 88%;
     font-family: $primary-font;
     font-weight: 600;
   }
+}
+.element-list {
+  color: $primary-font-color;
+  position: absolute;
+  bottom: 166px;
+  font-family: $primary-font;
+
+  //font-weight: 900;
+}
+.icon {
+  color: #ffbf64; /* Kolor ikony */
 }
 
 //service section
