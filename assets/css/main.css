@@ -12081,6 +12081,8 @@ li.nav-item {
 }
 
 #home .home__img_logo {
+  max-width: 50%;
+  height: 32vh;
   position: absolute;
   top: 140px;
 }
@@ -12092,7 +12094,7 @@ li.nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.09;
+  opacity: 0.26;
 }
 #home .home__text_intro {
   z-index: 2;
