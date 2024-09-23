@@ -12041,7 +12041,7 @@ li.nav-item {
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   font-family: "Nunito", sans-serif;
   color: rgb(0, 101, 168);
@@ -12052,7 +12052,7 @@ li.nav-item {
   padding-left: 100%;
   animation: scroll 35s linear infinite;
   position: fixed;
-  bottom: 35px;
+  bottom: 2px;
 }
 
 @keyframes scroll {
@@ -12082,9 +12082,9 @@ li.nav-item {
 
 #home .home__img_logo {
   max-width: 50%;
-  height: 32vh;
+  height: 29vh;
   position: absolute;
-  top: 140px;
+  top: 160px;
 }
 #home .home__img_background {
   position: absolute;
@@ -12106,18 +12106,28 @@ li.nav-item {
 #home p {
   margin-top: 0px;
   margin-bottom: -2rem;
-  font-size: 22px;
+  font-size: 24px;
   text-align: center;
   height: 14vh;
   width: 88%;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
 }
+@media (max-width: 1000px) {
+  #home p {
+    font-size: 18px;
+  }
+}
+@media (max-high: 1000px) {
+  #home p {
+    font-size: 18px;
+  }
+}
 
 .element-list {
   color: rgb(0, 101, 168);
   position: absolute;
-  bottom: 166px;
+  bottom: 100px;
   font-family: "Nunito", sans-serif;
 }
 
