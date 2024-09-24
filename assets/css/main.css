@@ -12084,7 +12084,7 @@ li.nav-item {
   max-width: 50%;
   height: 29vh;
   position: absolute;
-  top: 160px;
+  top: 90px;
 }
 #home .home__img_background {
   position: absolute;
@@ -12098,13 +12098,13 @@ li.nav-item {
 }
 #home .home__text_intro {
   z-index: 2;
-  display: flex;
+  display: flow-root;
   align-items: center;
   justify-content: center;
   color: rgb(0, 101, 168);
 }
 #home p {
-  margin-top: 0px;
+  margin-top: -165px;
   margin-bottom: -2rem;
   font-size: 24px;
   text-align: center;
@@ -12115,24 +12115,31 @@ li.nav-item {
 }
 @media (max-width: 1000px) {
   #home p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
-@media (max-high: 1000px) {
+@media screen and (max-height: 600px) {
   #home p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
-
-.element-list {
-  color: rgb(0, 101, 168);
-  position: absolute;
-  bottom: 100px;
-  font-family: "Nunito", sans-serif;
+@media screen and (max-height: 600px) {
+  #home #style-list {
+    font-size: 14px;
+  }
 }
 
 .icon {
   color: #ffbf64; /* Kolor ikony */
+}
+
+.robo {
+  color: rgb(1, 65, 108);
+}
+
+.robex {
+  -moz-columns: red;
+       columns: red;
 }
 
 #services {

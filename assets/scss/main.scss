@@ -141,7 +141,7 @@ li.nav-item {
     max-width: 50%;
     height: 29vh;
     position: absolute;
-    top: 160px;
+    top: 90px;
     // background-color: red;
   }
 
@@ -165,14 +165,15 @@ li.nav-item {
     // width: 100%;
     // height: 100vh;
     // font-size: 2vw;
-    display: flex;
+    // display: flex;
+    display: flow-root;
 
     align-items: center;
     justify-content: center;
     color: $primary-font-color;
   }
   p {
-    margin-top: 0px;
+    margin-top: -165px;
     margin-bottom: -2rem;
     font-size: 24px;
     // font-size: 1.9vw;
@@ -184,26 +185,32 @@ li.nav-item {
   }
   @media (max-width: 1000px) {
     p {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
-  @media (max-high: 1000px) {
+
+  @media screen and (max-height: 600px) {
     p {
-      font-size: 18px;
+      font-size: 16px;
+      // padding-top: 100px;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+    #style-list {
+      font-size: 14px;
     }
   }
 }
-.element-list {
-  color: $primary-font-color;
-  position: absolute;
-  bottom: 100px;
 
-  font-family: $primary-font;
-
-  //font-weight: 900;
-}
 .icon {
   color: #ffbf64; /* Kolor ikony */
+}
+.robo {
+  color: rgb(1, 65, 108);
+}
+.robex {
+  columns: red;
 }
 
 //service section
@@ -231,6 +238,7 @@ li.nav-item {
     width: 100%;
     height: 100vh;
     display: flex;
+    // display: flow-root;
     align-items: center;
     justify-content: center;
   }
