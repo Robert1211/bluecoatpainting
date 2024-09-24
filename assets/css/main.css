@@ -12134,12 +12134,9 @@ li.nav-item {
 }
 
 .robo {
+  line-height: 2;
+  font-size: 23px;
   color: rgb(1, 65, 108);
-}
-
-.robex {
-  -moz-columns: red;
-       columns: red;
 }
 
 #services {
