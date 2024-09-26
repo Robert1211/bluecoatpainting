@@ -19,6 +19,9 @@ $primary-nav: rgb(35, 182, 25);
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 //nav
+body {
+  text-align: center;
+}
 
 .navbar-main {
   // background-color: red;
@@ -46,6 +49,10 @@ ul.navbar-nav {
   justify-content: flex-end;
   font-size: 18px;
   font-weight: 600;
+  justify-content: center;
+  @media (max-width: 1058px) {
+    font-size: 15px;
+  }
 }
 
 li.nav-item {
@@ -61,6 +68,13 @@ li.nav-item {
 .logo-nav {
   font-family: $primary-font;
   color: $primary-font-color;
+  display: none;
+  @media only screen and (min-width: 500px) and (max-width: 763px) {
+    display: block; /* Show within the specified range */
+  }
+  @media (min-width: 1289px) {
+    display: block;
+  }
 }
 
 .nav-link {
@@ -76,13 +90,13 @@ li.nav-item {
 .email-icon-nav i {
   margin: 0px 4px 0px 4px;
   color: $primary-font-color;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .phone-icon-nav i {
   margin: 0px 4px 0px 4px;
   color: $primary-font-color;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 //scrolling txt start
@@ -91,13 +105,17 @@ li.nav-item {
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 35px;
+  font-weight: 700;
   font-family: $primary-font;
   color: $primary-font-color;
+  @media (max-width: 1000px) {
+    font-size: 30px;
+  }
 }
 
 .scrolling-text span {
+  z-index: 2;
   display: inline-block;
   padding-left: 100%;
   animation: scroll 35s linear infinite;
@@ -136,13 +154,19 @@ li.nav-item {
   background-color: rgb(244, 246, 249);
 }
 
+// .thin-line {
+//   width: 50%; /* Adjust the width as needed */
+//   height: 1px; /* Adjust the height as needed */
+//   background-color: black; /* Change the color as needed */
+//   margin: 20px 0; /* Optional: Add some margin for spacing */
+// }
+
 #home {
   .home__img_logo {
     max-width: 50%;
     height: 29vh;
     position: absolute;
     top: 90px;
-    // background-color: red;
   }
 
   .home__img_background {
@@ -157,6 +181,11 @@ li.nav-item {
     justify-content: center;
     opacity: 0.26;
   }
+  // hr.line-1 {
+  //   height: 1px;
+  //   background: black;
+  //   border-top: 1px solid red;
+  // }
 
   .home__text_intro {
     z-index: 2;
@@ -165,6 +194,7 @@ li.nav-item {
     align-items: center;
     justify-content: center;
     color: $primary-font-color;
+    // border-bottom: 1px solid black;
   }
   p {
     margin-top: -165px;
@@ -175,6 +205,14 @@ li.nav-item {
     width: 88%;
     font-family: $primary-font;
     font-weight: 600;
+    //border-top: 1px solid black;
+
+    // .thin-line {
+    //   width: 50%; /* Adjust the width as needed */
+    //   height: 1px; /* Adjust the height as needed */
+    //   background-color: black; /* Change the color as needed */
+    //   margin: 20px 0; /* Optional: Add some margin for spacing */
+    // }
   }
   @media (max-width: 1000px) {
     p {
@@ -187,15 +225,11 @@ li.nav-item {
       font-size: 16px;
     }
   }
-
-  @media screen and (max-height: 600px) {
-    #style-list {
-      font-size: 14px;
-    }
-  }
 }
+
 //logo icon painting company
 .home__img-logo {
+  border-radius: 5%;
   margin: 30px 20px 0px 20px;
   width: 150px;
 }

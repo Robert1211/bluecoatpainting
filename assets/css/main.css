@@ -11965,6 +11965,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  text-align: center;
+}
+
 .navbar-main {
   padding-left: 269px;
   padding-right: 269px;
@@ -11993,6 +11997,12 @@ ul.navbar-nav {
   justify-content: flex-end;
   font-size: 18px;
   font-weight: 600;
+  justify-content: center;
+}
+@media (max-width: 1058px) {
+  .navbar-collapse {
+    font-size: 15px;
+  }
 }
 
 li.nav-item {
@@ -12012,6 +12022,17 @@ li.nav-item {
 .logo-nav {
   font-family: "Nunito", sans-serif;
   color: rgb(0, 101, 168);
+  display: none;
+}
+@media only screen and (min-width: 500px) and (max-width: 763px) {
+  .logo-nav {
+    display: block; /* Show within the specified range */
+  }
+}
+@media (min-width: 1289px) {
+  .logo-nav {
+    display: block;
+  }
 }
 
 .nav-link {
@@ -12027,13 +12048,13 @@ li.nav-item {
 .email-icon-nav i {
   margin: 0px 4px 0px 4px;
   color: rgb(0, 101, 168);
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .phone-icon-nav i {
   margin: 0px 4px 0px 4px;
   color: rgb(0, 101, 168);
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .scrolling-text {
@@ -12041,13 +12062,19 @@ li.nav-item {
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 35px;
+  font-weight: 700;
   font-family: "Nunito", sans-serif;
   color: rgb(0, 101, 168);
 }
+@media (max-width: 1000px) {
+  .scrolling-text {
+    font-size: 30px;
+  }
+}
 
 .scrolling-text span {
+  z-index: 2;
   display: inline-block;
   padding-left: 100%;
   animation: scroll 35s linear infinite;
@@ -12123,13 +12150,9 @@ li.nav-item {
     font-size: 16px;
   }
 }
-@media screen and (max-height: 600px) {
-  #home #style-list {
-    font-size: 14px;
-  }
-}
 
 .home__img-logo {
+  border-radius: 5%;
   margin: 30px 20px 0px 20px;
   width: 150px;
 }
