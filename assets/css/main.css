@@ -12129,6 +12129,10 @@ li.nav-item {
   }
 }
 
+.home__img-logo {
+  width: 150px;
+}
+
 .icon {
   color: #ffbf64; /* Kolor ikony */
 }
