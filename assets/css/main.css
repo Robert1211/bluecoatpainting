@@ -12052,7 +12052,7 @@ li.nav-item {
   padding-left: 100%;
   animation: scroll 35s linear infinite;
   position: fixed;
-  bottom: 2px;
+  bottom: 5px;
 }
 
 @keyframes scroll {
