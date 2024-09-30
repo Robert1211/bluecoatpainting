@@ -19,9 +19,9 @@ $primary-nav: rgb(35, 182, 25);
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 //nav
-body {
-  text-align: center;
-}
+// body {
+//   text-align: center;
+// }
 
 .navbar-main {
   // background-color: red;
@@ -179,7 +179,8 @@ li.nav-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.26;
+    opacity: 0.36;
+    // display: none;
   }
   // hr.line-1 {
   //   height: 1px;
