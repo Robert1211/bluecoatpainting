@@ -12127,7 +12127,7 @@ li.nav-item {
   color: rgb(0, 101, 168);
 }
 #home p {
-  margin-top: -165px;
+  margin-top: -150px;
   margin-bottom: -2rem;
   font-size: 24px;
   text-align: center;
@@ -12149,24 +12149,42 @@ li.nav-item {
 
 .home__img-logo {
   border-radius: 5%;
-  margin: 30px 20px 0px 20px;
-  width: 150px;
+  margin: 45px 20px 0px 23px;
+  width: 137px;
 }
 
+@media (max-width: 800px) {
+  .home__img-logo {
+    width: 90px;
+    margin: 5px 10px 0px 10px;
+  }
+}
 .icon {
   color: #ffbf64; /* Kolor ikony */
 }
 
 .robo {
+  padding-top: 100px;
   line-height: 2;
-  font-size: 23px;
+  font-size: 21px;
   color: rgb(1, 65, 108);
 }
 
+@media (max-width: 800px) {
+  .robo {
+    font-size: 19px;
+    line-height: 1;
+  }
+}
 #services {
   background-color: rgb(244, 246, 249);
 }
 
+#services {
+  /* Container holding the columns */
+  /* Create three equal columns */
+  /* Responsive layout - when the screen is less than 600px wide, make the columns stack on top of each other */
+}
 #services .services__img_background {
   position: absolute;
   z-index: 1;
@@ -12178,13 +12196,23 @@ li.nav-item {
   justify-content: center;
   opacity: 0.1;
 }
-#services .services__text_intro {
-  z-index: 2;
-  width: 100%;
-  height: 100vh;
+#services .row {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+#services .column {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+  #services .column {
+    flex: 100%;
+  }
+}
+#services .first {
+  background-color: red;
+  text-align: center;
 }
 
 #projects {
