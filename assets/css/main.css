@@ -12183,7 +12183,7 @@ li.nav-item {
 #services {
   /* Container holding the columns */
   /* Create three equal columns */
-  /* Responsive layout - when the screen is less than 600px wide, make the columns stack on top of each other */
+  /* Responsive layout - when the screen is less than 770px wide, make the columns stack on top of each other */
 }
 #services .services__img_background {
   position: absolute;
@@ -12196,7 +12196,7 @@ li.nav-item {
   justify-content: center;
   opacity: 0.1;
 }
-#services .row {
+#services .services-row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -12204,15 +12204,22 @@ li.nav-item {
   flex: 1;
   padding: 10px;
   box-sizing: border-box;
+  border: 1px solid black; /* 2px width, solid style, black color */
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
   #services .column {
     flex: 100%;
   }
 }
 #services .first {
-  background-color: red;
+  background-color: rgb(25, 23, 47);
   text-align: center;
+}
+#services .first p {
+  color: white;
+}
+#services .first h2, #services .first .h2 {
+  color: white;
 }
 
 #projects {
