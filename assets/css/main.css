@@ -12187,88 +12187,6 @@ li.nav-item {
   align-items: center;
 }
 
-#services {
-  /* Container holding the columns */
-  /* Create three equal columns */
-  /* Responsive layout - when the screen is less than 770px wide, make the columns stack on top of each other */
-}
-#services .services__img_background {
-  position: absolute;
-  z-index: 1;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.1;
-}
-#services .services-row {
-  z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  margin: -2rem;
-  width: 100%;
-  height: auto;
-}
-@media screen and (max-width: 850px) {
-  #services .services-row {
-    width: 132%;
-    height: 55rem;
-  }
-}
-#services .column {
-  flex: 1;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ff6600; /* 2px width, solid style, black color */
-}
-@media screen and (max-width: 770px) {
-  #services .column {
-    flex: 36%;
-  }
-}
-#services .first {
-  background-color: rgb(47, 45, 71);
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  height: auto;
-  align-items: center;
-}
-#services .first p {
-  font-size: 17px;
-  color: white;
-  justify-content: center;
-}
-@media (max-width: 800px) {
-  #services .first p {
-    font-size: 15px;
-  }
-}
-@media (max-width: 900px) {
-  #services .first p {
-    font-size: 17px;
-  }
-}
-#services .first h2, #services .first .h2 {
-  color: #ff6600;
-  font-size: 23px;
-  text-align: center;
-}
-@media (max-width: 800px) {
-  #services .first h2, #services .first .h2 {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 600px) {
-  .first {
-    width: 10rem;
-    margin: 5px 10px 0px 10px;
-    background-color: red;
-  }
-}
 .service__photo {
   border-radius: 2%;
   width: 65%;
@@ -12284,15 +12202,23 @@ li.nav-item {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 10px;
 }
 
 .grid-item {
   padding: 20px;
-  border: 1px solid #000;
+  border: 2px solid #ff6600;
+  font-family: "Nunito", sans-serif;
+  color: rgb(0, 101, 168);
 }
 
+@media (max-width: 1200px) {
+  .strata {
+    grid-column: 1/-1;
+    justify-content: center;
+  }
+}
 #projects {
   background-color: rgb(244, 246, 249);
 }
