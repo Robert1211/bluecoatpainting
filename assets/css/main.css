@@ -12204,9 +12204,12 @@ li.nav-item {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .grid-item {
+  text-align: center;
   padding: 20px;
   border: 2px solid #ff6600;
   font-family: "Nunito", sans-serif;
@@ -12222,7 +12225,7 @@ li.nav-item {
 @media (max-width: 1200px) {
   .strata__image {
     border-radius: 2%;
-    width: 31%;
+    width: 20rem;
     height: auto;
   }
 }
