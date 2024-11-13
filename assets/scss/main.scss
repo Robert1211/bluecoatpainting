@@ -292,9 +292,9 @@ li.nav-item {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 10px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  gap: 32px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .grid-item {
   text-align: center;
