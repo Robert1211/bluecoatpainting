@@ -1,5 +1,7 @@
 console.log("Robert");
 
+lightGallery(document.querySelector(".gallery"));
+
 // add function close hamburger menu after click link
 document.addEventListener("click", function (event) {
   if (event.target.matches(".nav-link")) {

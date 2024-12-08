@@ -29,6 +29,10 @@
     />
 
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
   </head>
 
   <body>
@@ -212,11 +216,25 @@
 
         <!--Project Section Start-->
 
-        <section id="projects" class="section">
-          <img
+        <section id="projects">
+          <!-- <img
+            id="projects"
             class="projects__img_background"
+            class="section"
             src="https://drive.google.com/thumbnail?id=1BDE3xVhfg1MequABlrMMI7lD_YgU0h4k&sz=w1000"
-          />
+          /> -->
+          <h1>lightbox gallery</h1>
+          <div class="gallery">
+            <a href="image/gallery/residential-1.jpg">
+              <img src="image/gallery/residential-1.jpg" alt="" />
+            </a>
+            <a href="image/gallery/residential-2.jpg">
+              <img src="image/gallery/residential-2.jpg" alt="" />
+            </a>
+            <a href="image/gallery/residential-3.jpg">
+              <img src="image/gallery/residential-3.jpg" alt="" />
+            </a>
+          </div>
         </section>
 
         <!--Portfolio Section End-->
@@ -237,5 +255,7 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="./assets/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
   </body>
 </html>

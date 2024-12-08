@@ -12250,4 +12250,51 @@ li.nav-item {
   align-items: center;
   justify-content: center;
   opacity: 0.05;
+}
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 1s linear;
+}
+
+#projects {
+  background: rgb(244, 246, 249);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.gallery a {
+  height: 200px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 5px #000;
+}
+
+.gallery a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery a img:hover {
+  transform: scale(1.3);
+}
+
+h1, .h1 {
+  font-size: 50px;
+  margin-top: 0px;
+  color: #fff;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
 }/*# sourceMappingURL=main.css.map */
