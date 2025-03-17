@@ -370,7 +370,8 @@ li.nav-item {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
+  //change width from 90% to 100%, reason - more photo size display
   margin: 0 auto;
 }
 .gallery a {
@@ -429,4 +430,9 @@ a#lg-download.lg-download.lg-icon {
   font-size: 65px;
   font-family: $primary-font;
   color: $primary-font-color;
+}
+
+.icone-contact {
+  color: #ff6600;
+  font-size: 3rem;
 }

@@ -12294,7 +12294,7 @@ li.nav-item {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -12354,4 +12354,9 @@ a#lg-download.lg-download.lg-icon {
   font-size: 65px;
   font-family: "Nunito", sans-serif;
   color: rgb(0, 101, 168);
+}
+
+.icone-contact {
+  color: #ff6600;
+  font-size: 3rem;
 }/*# sourceMappingURL=main.css.map */
