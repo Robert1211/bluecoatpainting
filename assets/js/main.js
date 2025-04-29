@@ -15,7 +15,7 @@ document.addEventListener("click", function (event) {
 $(document).ready(function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    if (scroll > 100) {
+    if (scroll > 1) {
       $(".navbar").css("background", "rgba(192, 192, 192, .2)");
       $(".navbar").css("backdrop-filter", "blur(10px)");
       $(".navbar").css("transition", "1.5s");

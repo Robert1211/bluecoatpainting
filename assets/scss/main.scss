@@ -30,6 +30,19 @@ $primary-nav: rgb(35, 182, 25);
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @media (max-width: 767px) {
+    //  breakpoint for tablets/mobile
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  @media (max-width: 575px) {
+    // Przykładowy breakpoint dla telefonów
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 ul.navbar-nav {
@@ -46,6 +59,52 @@ ul.navbar-nav {
   @media (max-width: 1058px) {
     font-size: 15px;
   }
+  // style hamburger menu after open mobile version
+  @media (max-width: 767px) {
+    font-size: 25px;
+
+    &.show,
+    &.in {
+      background-color: rgba(192, 192, 192, 0.2); // Twoje półprzezroczyste tło
+      backdrop-filter: blur(10px); // Efekt rozmycia
+      // Dodaj też inne style, które mają być częścią tego tła, np.:
+      padding: 15px; // Wewnętrzny padding
+      margin-top: 10px; // Opcjonalny margines od góry
+      border-radius: 5px; // Opcjonalne zaokrąglenie rogów
+      border-top: 1px solid rgba(255, 255, 255, 0.1); // Opcjonalny separator
+    }
+
+    // --- Stylizacja linków wewnątrz (jak poprzednio) ---
+    .navbar-nav {
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-item {
+      margin-bottom: 5px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .nav-link {
+      display: block;
+      padding: 10px 15px;
+      color: $primary-font-color; // Dostosuj kolor tekstu
+      border-radius: 4px;
+
+      &:hover,
+      &:focus,
+      &.active {
+        background-color: rgba(0, 0, 0, 0.1); // Lekkie tło dla wyróżnienia
+        color: #ff6600; // Kolor akcentowy
+      }
+    }
+  }
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 li.nav-item {
