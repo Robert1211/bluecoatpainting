@@ -425,10 +425,22 @@ a#lg-download.lg-download.lg-icon {
 #contact {
   background-color: rgb(244, 246, 249);
 }
-#h1__contact {
+#h2__contact {
   margin-top: 120px;
   font-size: 65px;
   font-family: $primary-font;
+  color: $primary-font-color;
+}
+
+#p__contact {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  line-height: 1.6em;
+  padding: 1em 0 0.5em;
   color: $primary-font-color;
 }
 
