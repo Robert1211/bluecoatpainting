@@ -393,12 +393,12 @@ li.nav-item {
 
 #gallery-p {
   font-family: $primary-font;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
   font-size: 28px;
   letter-spacing: 4px;
   line-height: 1.3em;
-  text-transform: uppercase;
+  text-transform: none;
   // color: rgb(1, 65, 108);
   // margin: 20px auto;
   color: $primary-font-color;
@@ -424,7 +424,13 @@ a#lg-download.lg-download.lg-icon {
 //Contact section
 #contact {
   background-color: rgb(244, 246, 249);
+
+  .row.justify-content-center {
+    // Celujemy w wiersz wewnątrz sekcji #contact
+    margin-top: 6rem;
+  }
 }
+
 #h2__contact {
   margin-top: 120px;
   font-size: 65px;
@@ -444,7 +450,12 @@ a#lg-download.lg-download.lg-icon {
   color: $primary-font-color;
 }
 
-.icone-contact {
+#contact .contact-link i {
   color: #ff6600;
-  font-size: 3rem;
+}
+#contact .contact-link {
+  text-decoration: none;
+  color: $primary-font-color;
+  font-size: 25px;
+  font-weight: 500;
 }

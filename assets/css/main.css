@@ -12320,12 +12320,12 @@ li.nav-item {
 
 #gallery-p {
   font-family: "Nunito", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
   font-size: 28px;
   letter-spacing: 4px;
   line-height: 1.3em;
-  text-transform: uppercase;
+  text-transform: none;
   color: rgb(0, 101, 168);
   text-align: center;
 }
@@ -12348,6 +12348,9 @@ a#lg-download.lg-download.lg-icon {
 #contact {
   background-color: rgb(244, 246, 249);
 }
+#contact .row.justify-content-center {
+  margin-top: 6rem;
+}
 
 #h2__contact {
   margin-top: 120px;
@@ -12368,7 +12371,13 @@ a#lg-download.lg-download.lg-icon {
   color: rgb(0, 101, 168);
 }
 
-.icone-contact {
+#contact .contact-link i {
   color: #ff6600;
-  font-size: 3rem;
+}
+
+#contact .contact-link {
+  text-decoration: none;
+  color: rgb(0, 101, 168);
+  font-size: 25px;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
