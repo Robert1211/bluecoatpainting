@@ -11,6 +11,12 @@ $primary-font: "Nunito", sans-serif;
 
 $primary-nav: rgb(35, 182, 25);
 
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // body {
@@ -198,16 +204,16 @@ li.nav-item {
 }
 
 //home section
-.section {
-  color: $primary-font-color;
-  font-family: $primary-font;
-  background-color: #d9d9d9;
-}
+// .section {
+//   color: $primary-font-color;
+//   font-family: $primary-font;
+//   background-color: #d9d9d9;
+// }
 
-#home {
-  background-color: rgb(244, 246, 249);
-  align-items: center;
-}
+// #home {
+//   background-color: rgb(244, 246, 249);
+//   align-items: center;
+// }
 
 // .thin-line {
 //   width: 50%; /* Adjust the width as needed */
@@ -216,96 +222,207 @@ li.nav-item {
 //   margin: 20px 0; /* Optional: Add some margin for spacing */
 // }
 
+// #home {
+//   .home__img_logo {
+//     max-width: 50%;
+//     height: 29vh;
+//     position: absolute;
+//     top: 90px;
+//   }
+
+//   .home__img_background {
+//     // background-image: url('https://drive.google.com/thumbnail?id=1NzAO0wWCD6ax_amLrs8l5KYsbYttd6vQ&sz=w1000');
+//     position: absolute;
+//     //z-index: 1;
+//     background-size: cover;
+//     width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     opacity: 0.36;
+//     // display: none;
+//   }
+
+//   .home__text_intro {
+//     z-index: 2;
+//     display: flow-root;
+
+//     align-items: center;
+//     justify-content: center;
+//     color: $primary-font-color;
+//     // border-bottom: 1px solid black;
+//   }
+//   p {
+//     margin-top: -150px;
+//     margin-bottom: -2rem;
+//     font-size: 24px;
+//     text-align: center;
+//     height: 14vh;
+//     width: 88%;
+//     font-family: $primary-font;
+//     font-weight: 600;
+//   }
+//   @media (max-width: 1000px) {
+//     p {
+//       font-size: 20px;
+//     }
+//   }
+
+//   @media screen and (max-height: 600px) {
+//     p {
+//       font-size: 16px;
+//     }
+//   }
+// }
+
+// //logo icon painting company
+// .home__img-logo {
+//   border-radius: 5%;
+//   margin: 45px 20px 0px 23px;
+//   // width: 9rem;
+//   width: 137px;
+// }
+// @media (max-width: 800px) {
+//   .home__img-logo {
+//     width: 90px;
+//     margin: 5px 10px 0px 10px;
+//   }
+// }
+// @media (max-width: 1200px) {
+//   .home__img-logo {
+//     width: 100px;
+//     margin: 5px 10px 0px 10px;
+//   }
+// }
+
+// .icon {
+//   color: #ffbf64; /* Kolor ikony */
+// }
+// .robo {
+//   padding-top: 100px;
+//   line-height: 2;
+//   font-size: 21px;
+//   color: rgb(1, 65, 108);
+// }
+// @media (max-width: 800px) {
+//   .robo {
+//     font-size: 19px;
+//     line-height: 1;
+//   }
+// }
+
+// start new section home with mobile version
+
+// W pliku main.scss
+
 #home {
-  .home__img_logo {
-    max-width: 50%;
-    height: 29vh;
+  min-height: 100vh; // Minimalna wysokość równa wysokości ekranu
+  padding: 60px 15px; // Wewnętrzny padding (góra/dół, boki) - dostosuj wg potrzeb
+  position: relative; // Potrzebne, jeśli chcesz użyć pseudoelementu dla tła z overlayem
+  overflow: hidden; // Zapobiega wychodzeniu elementów poza sekcję
+
+  // Ustawienie tła za pomocą CSS
+  background-image: url("https://drive.google.com/thumbnail?id=15C-OSCPXx0wcuN0wkAUG1uUqtaL5CP55&sz=w1000"); // Twój URL tła
+  background-size: cover; // Skaluje obraz, aby pokrył cały obszar
+  background-position: center center; // Centruje obraz tła
+  background-repeat: no-repeat;
+  background-attachment: fixed; // Opcjonalnie: efekt paralaksy (może spowalniać na mobile)
+
+  // Opcjonalnie: Nakładka na tło dla lepszej czytelności tekstu
+  &::before {
+    content: "";
     position: absolute;
-    top: 90px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // background-color: rgba(
+    //   255,
+    //   255,
+    //   255,
+    //   0.7
+    // ); // Półprzezroczysta biała nakładka (dostosuj kolor i przezroczystość)
+    z-index: 1; // Ustawia nakładkę pod treścią
+    background-color: rgba(244, 246, 249, 0.6);
   }
 
-  .home__img_background {
-    // background-image: url('https://drive.google.com/thumbnail?id=1NzAO0wWCD6ax_amLrs8l5KYsbYttd6vQ&sz=w1000');
-    position: absolute;
-    //z-index: 1;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.36;
-    // display: none;
+  // Upewnij się, że treść jest nad nakładką
+  > * {
+    // Bezpośrednie dzieci sekcji #home
+    position: relative; // Ustawia kontekst stacking
+    z-index: 2; // Ustawia treść nad pseudoelementem ::before
+  }
+
+  .home__img_logo {
+    // Usuń style związane z position: absolute, top, left itp.
+    max-width: 400px; // Maksymalna szerokość logo (dostosuj)
+    height: auto; // Zachowaj proporcje
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); // Przeniesiony styl obramowania (dostosuj kolor)
+    padding-bottom: 1rem; // Odstęp pod logo przed linią
+  }
+
+  .home__text_container {
+    max-width: 1000px; // Ogranicz szerokość tekstu na większych ekranach
   }
 
   .home__text_intro {
-    z-index: 2;
-    display: flow-root;
+    // Usuń style związane z position, z-index, display: flow-root, ujemne marginesy
+    font-size: 1.1rem; // Dostosuj rozmiar czcionki
+    line-height: 1.6; // Dostosuj interlinię
+    color: #333; // Ciemniejszy kolor dla lepszej czytelności (dostosuj)
+  }
 
-    align-items: center;
-    justify-content: center;
-    color: $primary-font-color;
-    // border-bottom: 1px solid black;
-  }
-  p {
-    margin-top: -150px;
-    margin-bottom: -2rem;
-    font-size: 24px;
-    text-align: center;
-    height: 14vh;
-    width: 88%;
-    font-family: $primary-font;
-    font-weight: 600;
-  }
-  @media (max-width: 1000px) {
-    p {
-      font-size: 20px;
+  .home__features {
+    .icon {
+      color: green; // Kolor ikony "ptaszka" (dostosuj)
+      margin-right: 0.5em;
+    }
+    .robo {
+      font-weight: 600; // Pogrubienie tekstu cechy
     }
   }
 
-  @media screen and (max-height: 600px) {
-    p {
-      font-size: 16px;
+  .home__brand_logos {
+    gap: 10px; // Odstęp między logami (alternatywa dla marginesów w HTML)
+  }
+
+  .home__brand_logo {
+    max-height: 40px; // Maksymalna wysokość loga marki (dostosuj)
+    width: auto; // Szerokość automatyczna
+    opacity: 0.8; // Lekka przezroczystość (opcjonalnie)
+  }
+
+  // --- Media Queries dla responsywności ---
+  @media (max-width: 767px) {
+    // Dla tabletów i mniejszych
+    padding: 40px 15px; // Zmniejsz padding góra/dół
+
+    .home__img_logo {
+      max-width: 150px; // Zmniejsz logo
+    }
+
+    .home__text_intro {
+      font-size: 1rem; // Zmniejsz czcionkę tekstu
+    }
+
+    .home__brand_logo {
+      max-height: 30px; // Zmniejsz loga marek
+    }
+  }
+
+  @media (max-width: 575px) {
+    // Dla telefonów
+    .home__img_logo {
+      max-width: 195px; // Jeszcze mniejsze logo
+    }
+    .home__text_intro {
+      font-size: 0.9rem; // Jeszcze mniejsza czcionka
     }
   }
 }
 
-//logo icon painting company
-.home__img-logo {
-  border-radius: 5%;
-  margin: 45px 20px 0px 23px;
-  // width: 9rem;
-  width: 137px;
-}
-@media (max-width: 800px) {
-  .home__img-logo {
-    width: 90px;
-    margin: 5px 10px 0px 10px;
-  }
-}
-@media (max-width: 1200px) {
-  .home__img-logo {
-    width: 100px;
-    margin: 5px 10px 0px 10px;
-  }
-}
-
-.icon {
-  color: #ffbf64; /* Kolor ikony */
-}
-.robo {
-  padding-top: 100px;
-  line-height: 2;
-  font-size: 21px;
-  color: rgb(1, 65, 108);
-}
-@media (max-width: 800px) {
-  .robo {
-    font-size: 19px;
-    line-height: 1;
-  }
-}
-
+// end new section home with mobile version
 //service section start
 #services {
   background-color: rgb(244, 246, 249);
@@ -415,12 +532,6 @@ li.nav-item {
   }
 }
 
-* {
-  margin: 0px;
-  padding: 0;
-  box-sizing: border-box;
-  transition: all 0.3s linear;
-}
 #projects {
   background: $body-bg;
 }

@@ -90,7 +90,7 @@
       </div>
     </nav>
 
-    <div class="container">
+    <!-- <div class="container"> -->
       <main
         data-bs-spy="scroll"
         data-bs-target="#navbar-example2"
@@ -99,7 +99,7 @@
         class="scrollspy-example bg-body-tertiary p-0 rounded-2"
         tabindex="0"
       >
-        <section id="home" class="section">
+        <!-- <section id="home" class="section">
           <img
             class="home__img_background"
             src="https://drive.google.com/thumbnail?id=15C-OSCPXx0wcuN0wkAUG1uUqtaL5CP55&sz=w1000"
@@ -107,17 +107,17 @@
 
           <!-- <img class="home__img_background" src="image/roller.jpg" alt="back" /> -->
 
-          <img
+        <!-- <img
             style="border-bottom: 1px solid black"
             class="home__img_logo"
             src="https://drive.google.com/thumbnail?id=1NkEhaBbJ061evGUDJHYn8KhMqsf0mNDn&sz=w1000"
-          />
-          <!-- <div class="thin-line"></div> -->
-          <!-- <div class="thin-line"></div> -->
+          /> -->
+        <!-- <div class="thin-line"></div> -->
+        <!-- <div class="thin-line"></div> -->
 
-          <!-- <h1>Home</h1> -->
+        <!-- <h1>Home</h1> -->
 
-          <p class="home__text_intro">
+        <!-- <p class="home__text_intro">
             Welcome to ‘Blue Coat Painting’ At Blue Coat Painting, we understand
             that the right colour can transform a space. Our team of expert
             painters is committed to delivering exceptional quality and
@@ -152,7 +152,95 @@
               alt="back"
             />
           </p>
+        </section> 
+      -->
+
+        <!-- new section home for mobile start-->
+
+        <!-- Zmodyfikowana sekcja #home -->
+        <section
+          id="home" 
+          class="section d-flex flex-column align-items-center justify-content-center text-center"
+        >
+          <!-- Logo główne -->
+          <img
+            class="home__img_logo mb-4"
+            src="https://drive.google.com/thumbnail?id=1NkEhaBbJ061evGUDJHYn8KhMqsf0mNDn&sz=w1000"
+            alt="Blue Coat Painting Logo"
+          />
+
+          <!-- Kontener na tekst wprowadzający -->
+          <div class="home__text_container mb-4">
+            <!-- Dodano kontener i margines dolny -->
+            <p class="home__text_intro lead">
+              <!-- Użyto klasy 'lead' Bootstrapa dla wyróżnienia -->
+              Welcome to ‘Blue Coat Painting’ At Blue Coat Painting, we
+              understand that the right colour can transform a space. Our team
+              of expert painters is committed to delivering exceptional quality
+              and precision with every stroke. With a focus on reliability and
+              customer satisfaction, we ensure a seamless experience from
+              consultation to completion.
+            </p>
+            <!-- Lista cech (można użyć listy ul/li dla lepszej semantyki) -->
+            <div class="home__features mt-3">
+              <!-- Dodano kontener i margines górny -->
+              <span class="d-block mb-1"
+                ><span class="icon">✔</span>
+                <span class="robo">20+ Years Experience</span></span
+              >
+              <span class="d-block mb-1"
+                ><span class="icon">✔</span>
+                <span class="robo">Fully Licensed & Insured</span></span
+              >
+              <span class="d-block mb-1"
+                ><span class="icon">✔</span>
+                <span class="robo">Incredible attention to detail</span></span
+              >
+              <span class="d-block"
+                ><span class="icon">✔</span>
+                <span class="robo">Residential, Commercial & Strata</span></span
+              >
+            </div>
+          </div>
+
+          <!-- Kontener na loga marek farb -->
+          <div
+            class="home__brand_logos d-flex flex-wrap justify-content-center align-items-center mt-4"
+          >
+            <img
+              class="home__brand_logo mx-2 my-1"
+              src="image/dulux:photo.png"
+              alt="Dulux"
+            />
+            <img
+              class="home__brand_logo mx-2 my-1"
+              src="image/taub:new.png"
+              alt="Taubmans"
+            />
+            <img
+              class="home__brand_logo mx-2 my-1"
+              src="image/wattyl:new.png"
+              alt="Wattyl"
+            />
+            <img
+              class="home__brand_logo mx-2 my-1"
+              src="image/british:paint.png"
+              alt="British Paints"
+            />
+            <img
+              class="home__brand_logo mx-2 my-1"
+              src="image/potters:paint.jpg"
+              alt="Potters Paints"
+            />
+          </div>
+
+          <!-- Usunięty obraz tła jako <img> -->
+          <!-- <img class="home__img_background" src="https://drive.google.com/thumbnail?id=15C-OSCPXx0wcuN0wkAUG1uUqtaL5CP55&sz=w1000" /> -->
         </section>
+
+        <div class="container">
+
+        <!-- end  new section home for mobile start -->
 
         <!--Hero Section End-->
         <div class="scrolling-text">
