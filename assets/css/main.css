@@ -12190,12 +12190,18 @@ li.nav-item {
   line-height: 1.6;
   color: #333;
 }
-#home .home__features .icon {
-  color: green;
+#home span .icon {
+  color: red;
+}
+#home .icon {
+  color: #ffbf64;
   margin-right: 0.5em;
 }
-#home .home__features .robo {
+#home .robo {
   font-weight: 600;
+  color: rgb(0, 82, 137);
+  font-weight: 500;
+  font-size: 20px;
 }
 #home .home__brand_logos {
   gap: 10px;
@@ -12219,18 +12225,24 @@ li.nav-item {
     max-height: 30px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) and (max-width: 575px) {
   #home .home__img_logo {
     max-width: 195px;
   }
   #home .home__text_intro {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    color: rgb(0, 101, 168);
+    font-weight: 400;
   }
-}
-
-#services {
-  background-color: rgb(244, 246, 249);
-  align-items: center;
+  #home .robo {
+    font-weight: 600;
+    color: rgb(0, 82, 137);
+    font-weight: 500;
+    font-size: 20px;
+  }
+  #home .home__brand_logos {
+    gap: 0px;
+  }
 }
 
 .service__photo {
