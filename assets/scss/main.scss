@@ -462,6 +462,10 @@ li.nav-item {
   gap: 32px;
   padding-top: 70px;
   padding-bottom: 70px;
+
+  @media (max-width: 575px) {
+    padding-top: 0px;
+  }
 }
 .grid-item {
   text-align: center;

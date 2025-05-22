@@ -12265,6 +12265,11 @@ li.nav-item {
   padding-top: 70px;
   padding-bottom: 70px;
 }
+@media (max-width: 575px) {
+  .grid-container {
+    padding-top: 0px;
+  }
+}
 
 .grid-item {
   text-align: center;
