@@ -12227,7 +12227,7 @@ li.nav-item {
 }
 @media (max-width: 767px) and (max-width: 575px) {
   #home .home__img_logo {
-    max-width: 195px;
+    max-width: 300px;
   }
   #home .home__text_intro {
     font-size: 1rem;
