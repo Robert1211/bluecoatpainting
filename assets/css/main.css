@@ -12314,18 +12314,17 @@ li.nav-item {
 #p__text-service {
   font-family: "Nunito", sans-serif;
   font-style: normal;
-  font-size: 16px;
-  letter-spacing: 0.5px;
+  font-size: 1.1rem;
   text-transform: none;
-  line-height: 1.6em;
+  line-height: 1.6;
   padding: 1em 0 0.5em;
-  color: rgb(0, 101, 168);
+  color: #333;
 }
 @media (max-width: 575px) {
   #p__text-service {
     font-size: 1rem;
     color: rgb(0, 101, 168);
-    font-weight: 400;
+    font-weight: 600;
   }
 }
 
