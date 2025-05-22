@@ -12230,9 +12230,10 @@ li.nav-item {
     padding-top: 150px;
   }
   #home .home__text_intro {
+    font-family: "Nunito", sans-serif;
     font-size: 1rem;
     color: rgb(0, 101, 168);
-    font-weight: 400;
+    font-weight: 600;
   }
   #home .robo {
     font-weight: 500;
@@ -12322,6 +12323,7 @@ li.nav-item {
 }
 @media (max-width: 575px) {
   #p__text-service {
+    font-family: "Nunito", sans-serif;
     font-size: 1rem;
     color: rgb(0, 101, 168);
     font-weight: 600;
