@@ -12327,6 +12327,8 @@ li.nav-item {
 @media (max-width: 575px) {
   #p__text-service {
     font-size: 1rem;
+    color: rgb(0, 101, 168);
+    font-weight: 400;
   }
 }
 

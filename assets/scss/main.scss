@@ -526,6 +526,8 @@ li.nav-item {
 
   @media (max-width: 575px) {
     font-size: 1rem;
+    color: $primary-font-color;
+    font-weight: 400;
   }
 }
 
