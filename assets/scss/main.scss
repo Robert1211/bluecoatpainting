@@ -436,6 +436,9 @@ li.nav-item {
     }
   }
 }
+
+//start SECTION SERVICE
+
 .service__photo {
   border-radius: 2%;
   width: 65%;
@@ -516,6 +519,10 @@ li.nav-item {
   line-height: 1.6em;
   padding: 1em 0 0.5em;
   color: $primary-font-color;
+
+  @media (max-width: 575px) {
+    font-size: 1rem;
+  }
 }
 
 //Project Section Start

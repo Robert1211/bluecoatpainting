@@ -12319,6 +12319,11 @@ li.nav-item {
   padding: 1em 0 0.5em;
   color: rgb(0, 101, 168);
 }
+@media (max-width: 575px) {
+  #p__text-service {
+    font-size: 1rem;
+  }
+}
 
 #projects {
   background-color: rgb(244, 246, 249);
