@@ -380,9 +380,8 @@ li.nav-item {
     margin-right: 0.5em;
   }
   .robo {
-    font-weight: 600; // Pogrubienie tekstu cechy
+    font-weight: 600; // Pogrubienie tekstu cechy - Upewnienie się, że to jest stosowane jako bazowe
     color: rgb(0, 82, 137);
-    font-weight: 500;
     font-size: 20px;
   }
 
@@ -398,9 +397,9 @@ li.nav-item {
 
   // --- Media Queries dla responsywności ---
   @media (max-width: 767px) {
-    // Dla tabletów i mniejszych
-    //padding: 40px 15px; // Zmniejsz padding góra/dół
-    padding: 0px 15px 0px;
+    // Dla tabletów i mniejszych - dodano padding pionowy dla sekcji
+    padding: 30px 15px;
+
     .home__img_logo {
       max-width: 150px; // Zmniejsz logo
     }
@@ -415,24 +414,25 @@ li.nav-item {
 
     @media (max-width: 575px) {
       // Dla telefonów
+      // Sekcja #home dziedziczy padding: 30px 15px; z powyższego media query
       .home__img_logo {
         max-width: 320px; // Jeszcze mniejsze logo
-        padding: 120px 15px 0px;
+        // Dostosowany padding: tylko górny, aby nie nadpisać padding-bottom: 1rem
+        // i nie duplikować poziomego paddingu sekcji.
+        // Wartość 60px jest przykładowa, dostosuj do potrzeb (razem z paddingiem sekcji da ~90px od góry).
+        padding-top: 60px;
       }
       .home__text_intro {
         font-size: 1rem; // Jeszcze mniejsza czcionka
-        // color: $primary-font-color;
         color: rgb(0, 101, 168);
         font-weight: 400;
       }
       .robo {
-        font-weight: 600; // Pogrubienie tekstu cechy
-        color: rgb(0, 82, 137);
-        font-weight: 500;
-        font-size: 20px;
+        font-weight: 500; // Cieńsza czcionka na telefonach (jeśli bazowo jest 600)
+        // color i font-size dziedziczone z bazy, jeśli nie ma potrzeby zmiany
       }
       .home__brand_logos {
-        gap: 0px; // Odstęp między logami (alternatywa dla marginesów w HTML)
+        gap: 10px; // Dodano mały odstęp między logami marek
       }
     }
   }

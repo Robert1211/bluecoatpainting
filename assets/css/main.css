@@ -12200,7 +12200,6 @@ li.nav-item {
 #home .robo {
   font-weight: 600;
   color: rgb(0, 82, 137);
-  font-weight: 500;
   font-size: 20px;
 }
 #home .home__brand_logos {
@@ -12213,7 +12212,7 @@ li.nav-item {
 }
 @media (max-width: 767px) {
   #home {
-    padding: 0px 15px 0px;
+    padding: 30px 15px;
   }
   #home .home__img_logo {
     max-width: 150px;
@@ -12228,7 +12227,7 @@ li.nav-item {
 @media (max-width: 767px) and (max-width: 575px) {
   #home .home__img_logo {
     max-width: 320px;
-    padding: 120px 15px 0px;
+    padding-top: 60px;
   }
   #home .home__text_intro {
     font-size: 1rem;
@@ -12236,13 +12235,10 @@ li.nav-item {
     font-weight: 400;
   }
   #home .robo {
-    font-weight: 600;
-    color: rgb(0, 82, 137);
     font-weight: 500;
-    font-size: 20px;
   }
   #home .home__brand_logos {
-    gap: 0px;
+    gap: 10px;
   }
 }
 
