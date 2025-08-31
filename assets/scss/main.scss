@@ -370,7 +370,9 @@ li.nav-item {
     // Usuń style związane z position, z-index, display: flow-root, ujemne marginesy
     font-size: 1.1rem; // Dostosuj rozmiar czcionki
     line-height: 1.6; // Dostosuj interlinię
-    color: #333; // Ciemniejszy kolor dla lepszej czytelności (dostosuj)
+    // color: #333; // Ciemniejszy kolor dla lepszej czytelności (dostosuj)
+    // color: $primary-font-color;
+    color: rgb(0, 101, 168);
   }
   span .icon {
     color: red;
